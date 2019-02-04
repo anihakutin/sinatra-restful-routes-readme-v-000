@@ -27,15 +27,15 @@ Browsers behave a little strangely as it relates to `PUT`, `PATCH` and `DELETE` 
 Let's take a magazine website as an example. You'd want to have a controller action to create a new article (new route), to display one article (show route), to display all articles (index route), to delete an article (delete route), and a page to edit an article (edit route).
 
 | HTTP VERB | ROUTE              | Action        | Used For                                               |
-|---      |---                 |---            |---                                                     |
-| GET     | '/articles'           | index action  | index page to display all articles                        |
-| GET     | '/articles/new'       | new action    | displays create article form                              |
-| POST    | '/articles'           | create action | creates one article                                  |
-| GET     | '/articles/:id'       | show action   | displays one article based on ID in the url          |
-| GET     | '/articles/:id/edit'  | edit action   | displays edit form based on ID in the url              |
-| PATCH   | '/articles/:id'       | update action | _modifies_ an existing article based on ID in the url|
-| PUT     | '/articles/:id'       | update action | _replaces_ an existing article based on ID in the url|
-| DELETE  | '/articles/:id'       | delete action | deletes one article based on ID in the url           |
+|---      |---                     |---            |---                                                   |
+| GET     | '/articles'            | index action  | index page to display all articles                   |
+| GET     | '/articles/new'        | new action    | displays create article form                         |
+| POST    | '/articles'            | create action | creates one article                                  |
+| GET     | '/articles/:id'        | show action   | displays one article based on ID in the url          |
+| GET     | '/articles/:id/edit'   | edit action   | displays edit form based on ID in the url            |
+| PATCH   | '/articles/:id'        | update action | _modifies_ an existing article based on ID in the url|
+| PUT     | '/articles/:id'        | update action | _replaces_ an existing article based on ID in the url|
+| DELETE  | '/articles/:id/delete' | delete action | deletes one article based on ID in the url           |
 
 ## The Routes
 
